@@ -1,0 +1,37 @@
+from huron import Huron
+from boa_constructor import Boa_Constructor
+
+huron1 = Huron("David", 10, 2, "Colombia", 30)
+huron2 = Huron("Santiago", 20, 4, "Argentina", 60)
+huron3 = Huron("Juan", 5, 1, "Chile", 15)
+
+boa1 = Boa_Constructor("Pedro", 100, 10, "Colombia", 100, 0)
+boa2 = Boa_Constructor("Pablo", 120, 30, "Peru", 30, 0)
+boa3 = Boa_Constructor("Pepe", 80, 45, "Brasil", 80, 0)
+
+print("\n---INFORMACIÓN HURON---")
+print("Nombre: ", huron1.nombre)
+print("Peso: ", huron1.peso)
+print("Edad", huron1.edad)
+print("Pais Origen: ", huron1.pais_origen)
+print("Impuestos: ", huron1.impuestos)
+huron1.hacer_sonido()
+print("Flete: ", huron1.calcular_flete())
+print("Kilos Comidos: ", huron1._kilos_comidos)
+huron1.comer(10)
+print("Kilos Comidos: ", huron1._kilos_comidos)
+
+print("\n---INFORMACIÓN BOA---")
+print("Nombre: ", boa1.nombre)
+print("Peso: ", boa1.peso)
+print("Edad", boa1.edad)
+print("Pais Origen: ", boa1.pais_origen)
+print("Impuestos: ", boa1.impuestos)
+print("Ratones comidos: ", boa1.ratones_comidos)
+boa1.comer_raton()
+print("Ratones comidos: ", boa1.ratones_comidos)
+boa1.hacer_sonido()
+print("Flete: ", boa1.calcular_flete())
+print("Kilos Comidos: ", boa1._kilos_comidos)
+boa1.comer(30)
+print("Kilos Comidos: ", boa1._kilos_comidos)
