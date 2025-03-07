@@ -23,7 +23,7 @@ class Boa_Constructor(Animal_Exotico):
     
     def comer_varios_ratones(self, cantidad):
         try: 
-            if(cantidad != 10):
+            if(cantidad >= 20):
                 raise ValueError("Demasiados Ratones")
             self.ratones_comidos += cantidad
             return f"Ratones comidos: {cantidad}"
